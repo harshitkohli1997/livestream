@@ -16,7 +16,7 @@ setInterval(() => {
     const frame = wCap.read();
     const image = cv.imencode('.jpg',frame).toString('base64');
     io.emit('image',image);
-}, 20);
+}, 25); // play with time value for diff rendering
 
 const port = 5000;
 
